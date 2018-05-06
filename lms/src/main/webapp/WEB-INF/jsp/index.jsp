@@ -76,14 +76,6 @@
   <div class="form-group">
     <label for="purchase_date">Puchase Date</label>
     <input type="date" class="form-control" value="${book.puchase_date}" id="purchase_date" name="purchase_date">
-    
-    <input type="file" size="26" name="file1" ></td>
-</tr>
-<tr>
-    <td colspan="2" align="center">
-
-    <input type="submit" value="${book.img}" class="form-control" id="img" name="img">
-</td>
   
   <button type="submit" class="btn btn-default">Submit</button>
   
