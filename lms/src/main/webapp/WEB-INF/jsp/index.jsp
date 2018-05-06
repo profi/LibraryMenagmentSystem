@@ -33,8 +33,10 @@
         <th>Book name</th>
         <th>Autor</th>
         <th>Purchase date</th>
+         <th>Image</th>
         <th>Update</th>
         <th>Delete</th>
+      
        
       </tr>
     </thead>
@@ -45,6 +47,7 @@
          <td>${book.book_name}</td>
          <td>${book.autor}</td>
          <td>${book.purchase_date}</td>
+         <td><img src="${book.img}" alt="Lights" style="width:150px" height="200"></td>
          
          <td><a href="updateBook?id=${book.id}"</a> <div class="glyphicon glyphicon-pencil"</div></td>
          <td><a href="deleteBook?id=${book.id}"</a> <div class="glyphicon glyphicon-trash"</div></td>
@@ -67,8 +70,20 @@
     <input type="text" class="form-control" value="${book.autor}" id="autor" name="autor">
   </div>
   <div class="form-group">
+    <label for="autor">Image</label>
+    <input type="text" class="form-control" value="${book.img}" id="img" name="img">
+  </div>
+  <div class="form-group">
     <label for="purchase_date">Puchase Date</label>
     <input type="date" class="form-control" value="${book.puchase_date}" id="purchase_date" name="purchase_date">
+    
+    <input type="file" size="26" name="file1" ></td>
+</tr>
+<tr>
+    <td colspan="2" align="center">
+
+    <input type="submit" value="${book.img}" class="form-control" id="img" name="img">
+</td>
   
   <button type="submit" class="btn btn-default">Submit</button>
   
